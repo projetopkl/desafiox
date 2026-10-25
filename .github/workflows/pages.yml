@@ -26,6 +26,8 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Configure GitHub Pages
+        id: configure
+        continue-on-error: true
         uses: actions/configure-pages@v6
         with:
           enablement: true
